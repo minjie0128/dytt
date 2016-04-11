@@ -1,2 +1,0 @@
-include ':app', ':myapplication', ':myapplication'
-include ':social_sdk_library_project'
