@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/RelativeLayout1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/title_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/navbarback" >
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/title_bar"
+        android:background="@drawable/mainback" >
+
+        <TextView
+            android:id="@+id/t_service"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="15dp"
+            android:text="阿拉订企业版用户登录"
+            android:textColor="#535353" />
+
+        <TableLayout
+            android:id="@+id/table_login"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/t_service"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="10dip"
+            android:layout_marginRight="10dip"
+            android:layout_marginTop="30dp"
+            android:background="@drawable/chinatelecom_point_service_list"
+            android:stretchColumns="0" >
+
+            <TableRow
+                android:id="@+id/tableRow1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="10dp" >
+
+                <EditText
+                    android:id="@+id/v_user"
+                    style="@style/editText_input_phone"
+                    android:layout_width="wrap_content"
+                    android:background="@null"
+                    android:hint="@string/page_login_textView_v_user_hint"
+                    android:imeOptions="actionDone" >
+                </EditText>
+            </TableRow>
+
+            <View
+                android:layout_height="1dip"
+                android:background="#E5C8A3" />
+
+            <TableRow
+                android:id="@+id/tableRow2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="10dp" >
+
+                <EditText
+                    android:id="@+id/v_password"
+                    style="@style/login_editText_input_password"
+                    android:layout_width="wrap_content"
+                    android:background="@null"
+                    android:digits="1234567890qwertyuiopasdfghjklzxcvbnm`-=[]\;,./~!@#$%^*()_+}{:?&apos;&lt;>&amp;&quot;"
+                    android:hint="@string/prompt_input_password" >
+                </EditText>
+            </TableRow>
+        </TableLayout>
+
+        <Button
+            android:id="@+id/login_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/table_login"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="25dp"
+            android:background="@drawable/big_button"
+            android:text="@string/page_login_button_login"
+            android:textColor="#FFFFFF" />
+    </RelativeLayout>
+
+</RelativeLayout>

@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+ Copyright (C) 2008 ZXing authors
+
+ Licensed under the Apache License, Version 2.0 (the "License");
+ you may not use this file except in compliance with the License.
+ You may obtain a copy of the License at
+
+      http://www.apache.org/licenses/LICENSE-2.0
+
+ Unless required by applicable law or agreed to in writing, software
+ distributed under the License is distributed on an "AS IS" BASIS,
+ WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ See the License for the specific language governing permissions and
+ limitations under the License.
+ -->
+<resources>
+  <color name="contents_text">#ff000000</color>
+  <color name="encode_view">#ffffffff</color>
+  <color name="help_button_view">#ffcccccc</color>
+  <color name="help_view">#ff404040</color>
+  <color name="possible_result_points">#c0ffff00</color>  
+  <color name="result_image_border">#ffffffff</color>
+  <color name="result_minor_text">#ffc0c0c0</color>
+  <color name="result_points">#c000ff00</color>
+  <color name="result_text">#ffffffff</color>
+  <color name="result_view">#b0000000</color>
+  <color name="sbc_header_text">#ff808080</color>
+  <color name="sbc_header_view">#ffffffff</color>
+  <color name="sbc_list_item">#fffff0e0</color>
+  <color name="sbc_layout_view">#ffffffff</color>
+  <color name="sbc_page_number_text">#ff000000</color>
+  <color name="sbc_snippet_text">#ff4b4b4b</color>
+  <color name="share_text">#ff000000</color>
+  <color name="share_view">#ffffffff</color>
+  <color name="status_view">#50000000</color>
+  <color name="status_text">#ffffffff</color>
+  <color name="transparent">#00000000</color>
+  <color name="viewfinder_frame">#ff000000</color>
+  <color name="viewfinder_laser">#ffff0000</color>
+  <color name="viewfinder_mask">#60000000</color>
+  
+  <color name="scan_area_bg">#D9D9D9</color>
+  <color name="input_area_bg">#F1F1F1</color>
+  <color name="center_circle_bg">#70BED2</color>
+  <color name="black">#ff000000</color>
+  <color name="main_bg">#A6A6A6</color>
+  <color name="border">#313131</color>
+  <color name="entrance_bg">#FEE8D1</color>
+  <color name="orange">#FFE7CCAD</color>
+
+
+    <color name="white">#ffffffff</color>
+    <color name="blue">#FF1262C9</color>
+    <color name="gray">#ffefeff4</color>
+    <color name="green">#FF1DD621</color>
+    <color name="light_gray">#ffE0E0E0</color>
+    <color name="china_white">#ffF7F7F7</color>
+    <color name="page_bg">#FFF0EFF5</color>
+    <color name="warm_tip">#FFA5A5A5</color>
+    <color name="common_black">#FF333333</color><!-- 用于页面最常见的黑色字体 -->
+    <color name="common_gray">#ffa8b7b7</color><!-- 用于页面最常见的灰色字体 FF898989-->
+    <color name="list_bg_on">#FFD9D9D9</color>
+    <color name="city_list_node">#55cccccc</color>
+    <color name="list_divider_color">#ffcccccc</color>
+    <color name="btn_disable_color">#ffa8b7b7</color>
+    <color name="warm_tips_line">#c3c3c3</color>
+    <color name="text_disabled">#A0A0A0</color>
+    <color name="text_font_gray">#a8b7b7</color>
+    <color name="button_bg_color">#FF6700</color>
+    <color name="text_light_orange">#ffed6d0f</color>
+    <color name="hint_gray">#ffcccccc</color>
+</resources>

@@ -1,0 +1,209 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/r_root"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <RelativeLayout
+        android:id="@+id/r_title_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/navbarback" >
+
+        <Button
+            android:id="@+id/b_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/back"
+            android:text="返回"
+            android:textColor="#FFFFFFFF" >
+        </Button>
+
+        <Button
+            android:id="@+id/b_upload"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/home"
+            android:text="上传"
+            android:textColor="#FFFFFFFF" >
+        </Button>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/r_title_bar"
+        android:background="@drawable/mainback"
+        android:paddingBottom="10dp" >
+
+        <RadioGroup
+            android:id="@+id/r_radio"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginTop="15dp"
+            android:orientation="horizontal" >
+
+            <RadioButton
+                android:id="@+id/r_unuploaded"
+                android:layout_width="wrap_content"
+                android:layout_height="45dp"
+                android:layout_weight="1"
+                android:background="@drawable/checkbox_selector"
+                android:button="@null"
+                android:checked="true"
+                android:gravity="center"
+                android:text="未上传"
+                android:textColor="@color/text_color_selector" />
+
+            <RadioButton
+                android:id="@+id/r_uploaded"
+                android:layout_width="wrap_content"
+                android:layout_height="45dp"
+                android:layout_weight="1"
+                android:background="@drawable/checkbox_selector2"
+                android:button="@null"
+                android:gravity="center"
+                android:text="已上传"
+                android:textColor="@color/text_color_selector" />
+        </RadioGroup>
+
+        <LinearLayout
+            android:id="@+id/l_sort"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/r_radio"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="10dp" >
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center" >
+
+                <TextView
+                    android:id="@+id/t_user"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:text="用户"
+                    android:textColor="#FF000000"
+                    android:textSize="16sp" />
+
+                <ImageView
+                    android:id="@+id/i_sort_by_user"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@+id/t_user"
+                    android:src="@drawable/sort" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center" >
+
+                <TextView
+                    android:id="@+id/t_user"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:text="劵号"
+                    android:textColor="#FF000000"
+                    android:textSize="16sp" />
+
+                <ImageView
+                    android:id="@+id/i_sort_by_number"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@+id/t_user"
+                    android:src="@drawable/sort" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center" >
+
+                <TextView
+                    android:id="@+id/t_user"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:text="金额"
+                    android:textColor="#FF000000"
+                    android:textSize="16sp" />
+
+                <ImageView
+                    android:id="@+id/i_sort_by_money"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@+id/t_user"
+                    android:src="@drawable/sort" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center" >
+
+                <TextView
+                    android:id="@+id/t_user"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:text="日期"
+                    android:textColor="#FF000000"
+                    android:textSize="16sp" />
+
+                <ImageView
+                    android:id="@+id/i_sort_by_date"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@+id/t_user"
+                    android:src="@drawable/sort" />
+            </RelativeLayout>
+        </LinearLayout>
+
+        <com.alading.ee.view.XListView
+            android:id="@+id/l_exchange_record"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/l_sort"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="15dp"
+            android:background="@color/white"
+            android:cacheColorHint="@color/transparent"
+            android:divider="@color/white"
+            android:dividerHeight="10dp"
+            android:fadingEdge="none"
+            android:listSelector="@null" >
+        </com.alading.ee.view.XListView>
+
+        <TextView
+            android:id="@+id/t_no_record"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/l_sort"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"
+            android:text="无兑换记录"
+            android:textColor="#FF000000"
+            android:visibility="gone" />
+    </RelativeLayout>
+
+</RelativeLayout>

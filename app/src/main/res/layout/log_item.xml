@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/r_user_ship_address"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center_vertical"
+    android:background="@drawable/warm_tip"
+    android:padding="10dp" >
+
+    <TextView
+        android:id="@+id/t_log_mobile"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:singleLine="true"
+        android:text="@string/scan_record_user"
+        android:textColor="@color/black"
+        android:textSize="14sp" />
+
+    <TextView
+        android:id="@+id/t_log_number"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/t_log_mobile"
+        android:layout_marginTop="5dp"
+        android:singleLine="true"
+        android:text="@string/scan_record_number"
+        android:textColor="@color/black"
+        android:textSize="14sp" />
+
+    <TextView
+        android:id="@+id/t_log_money_amount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/t_log_number"
+        android:layout_marginTop="5dp"
+        android:singleLine="true"
+        android:text="@string/scan_record_money"
+        android:textColor="@color/black"
+        android:textSize="14sp" />
+
+    <TextView
+        android:id="@+id/t_log_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/t_log_money_amount"
+        android:layout_marginTop="5dp"
+        android:singleLine="true"
+        android:text="@string/scan_record_time"
+        android:textColor="@color/black"
+        android:textSize="14sp" />
+
+</RelativeLayout>
